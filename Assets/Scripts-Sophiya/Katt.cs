@@ -5,7 +5,7 @@ using UnityEngine;
 public class Katt : MonoBehaviour
 {
     public float moveSpeed = 4f;
-    public float jumpForce = 6f;
+    public float jumpForce = 8f;
     private Rigidbody2D rb;
     private bool isGrounded = true;
     void Start()
@@ -16,7 +16,7 @@ public class Katt : MonoBehaviour
     void Update()
     {
         float moveDirection = 0f;
-        if (Input.GetKey(KeyCode.A)) moveDirection = -0.5;
+        if (Input.GetKey(KeyCode.A)) moveDirection = -0.5f;
         if (Input.GetKey(KeyCode.D)) moveDirection = 0.5f;
 
         rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
