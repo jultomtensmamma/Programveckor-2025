@@ -7,6 +7,8 @@ public class CameraMovement : MonoBehaviour
 {
     [SerializeField]
     GameObject Player;
+
+    Vector3 velocity;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,9 +16,9 @@ public class CameraMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Vector3 targetPosition = Player.transform.position + new Vector3(0, 0, -10);
-        transform.position = targetPosition;
+        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, 0.1f);
     }
 }
