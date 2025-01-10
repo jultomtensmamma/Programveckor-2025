@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShootEnemy : MonoBehaviour
 {
-    public GameObject projectilePrefab;
+    public GameObject trianglePrefab;
     public Transform firepoint;
     public float projectileSpeed = 12f;
     public float projectileLifetime = 6f;
@@ -12,19 +12,26 @@ public class ShootEnemy : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Shoot();
+            ShootTriangle();
         }
     }
-    void Shoot()
+    void ShootTriangle()
     {
-        GameObject projectile = Instantiate(projectilePrefab, firepoint.position, firepoint.rotation);
-
-        Rigidbody rb = projectile.GetComponent<Rigidbody>();
+        GameObject triangle = Instantiate(trianglePrefab, firepoint.position, firepoint.rotation);
+        triangle.transform.rotation = Quaternion.Euler(0, 90, 0);
+        Rigidbody rb = triangle.GetComponent<Rigidbody>();
         if (rb != null)
         {
-            rb.velocity = firepoint.forward * projectileSpeed;
+            rb.velocity = triangle.transform.right * projectileSpeed;
         }
-        Destroy(projectile, projectileLifetime);
+
+
+        Destroy(triangle, projectileLifetime);
+        {
+
+
+        }
+
     }
 
 }
