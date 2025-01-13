@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -230, y: 195}
+  m_AnchoredPosition: {x: -230, y: 119}
   m_SizeDelta: {x: 189.5546, y: 33.6857}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &370967846
@@ -502,7 +502,7 @@ Transform:
   m_GameObject: {fileID: 414566150}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 55.59, y: 1.7297997, z: 0}
+  m_LocalPosition: {x: 54.08, y: 1.7297997, z: 0}
   m_LocalScale: {x: -2.6987276, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1195,6 +1195,7 @@ MonoBehaviour:
   health: 100
   maxhealth: 0
   Healthbar: {fileID: 1221320413}
+  Respawn: 4
 --- !u!1 &647584221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2203,11 +2204,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a9de852fc93324b820e356cbc6fc25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  circlePrefab: {fileID: 5178972145786973632, guid: 78ec6f9df4b8d3e479a128b6301f59d2, type: 3}
-  forwardForce: 4
+  circlePrefab: {fileID: 2060499666166890008}
+  forwardForce: 5
   upwardForce: 2
-  lifespan: 7
+  lifespan: 5
   cooldown: 5
+  spawnDistance: 1.5
 --- !u!114 &785808147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2223,6 +2225,7 @@ MonoBehaviour:
   health: 100
   maxhealth: 0
   Healthbar: {fileID: 370967846}
+  Respawn: 4
 --- !u!1 &807510348
 GameObject:
   m_ObjectHideFlags: 0
@@ -2907,7 +2910,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 239, y: 195}
+  m_AnchoredPosition: {x: 239, y: 113}
   m_SizeDelta: {x: 189.5546, y: 33.6857}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1221320413
@@ -4206,7 +4209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c7f6b92596f0ce4a838121219b09bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healing: 0
+  healingAmount: 15
 --- !u!1001 &9145201066324851911
 PrefabInstance:
   m_ObjectHideFlags: 0
