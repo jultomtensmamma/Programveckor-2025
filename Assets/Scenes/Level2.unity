@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 588261653}
   - component: {fileID: 588261654}
   - component: {fileID: 588261655}
+  - component: {fileID: 588261656}
   m_Layer: 0
   m_Name: Ability
   m_TagString: Untagged
@@ -223,9 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trianglePrefab: {fileID: 588261650}
-  firepoint: {fileID: 588261652}
-  projectileSpeed: 6
-  projectileLifetime: 6
+  firePoint: {fileID: 588261652}
 --- !u!50 &588261654
 Rigidbody2D:
   serializedVersion: 4
@@ -298,6 +297,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &588261656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588261650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30d3c727eb81633418af563789b48d87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  damage: 10
 --- !u!1 &1198029066
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,9 +479,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1234173797}
   - component: {fileID: 1234173796}
+  - component: {fileID: 1234173798}
   m_Layer: 0
-  m_Name: Enemy
-  m_TagString: Untagged
+  m_Name: Fiende
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -540,6 +554,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1234173798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234173795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df81f87a812890946b8ddc2d7e3001fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!1 &1795665927
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,9 +847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trianglePrefab: {fileID: 588261650}
-  firepoint: {fileID: 588261652}
-  projectileSpeed: 12
-  projectileLifetime: 6
+  firePoint: {fileID: 588261652}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
