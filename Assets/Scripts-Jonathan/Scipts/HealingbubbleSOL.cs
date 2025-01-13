@@ -9,6 +9,7 @@ public class HealingbubbleSOL : MonoBehaviour
     public float upwardForce = 2f;  // Force applied upward when spawning the circle
     public float lifespan = 15f;    // Time before the circle is destroyed
     public float cooldown;
+    public float spawnDistance = 1.5f;
     float lastbubble;
 
     private Vector2 lastMovementDirection = Vector2.right; // Tracks the last movement direction
@@ -34,9 +35,12 @@ public class HealingbubbleSOL : MonoBehaviour
     void SpawnCircle()
     {
         // Spawn the circle prefab at Player 1's position
-        GameObject circle = Instantiate(circlePrefab, transform.position, Quaternion.identity);
+        Vector2 spawnPosition = (Vector2)transform.position + lastMovementDirection * spawnDistance;
 
-        // Get the Rigidbody2D component from the spawned circle
+        // Spawn the healing bubble prefab at the calculated position
+        GameObject circle = Instantiate(circlePrefab, spawnPosition, Quaternion.identity);
+
+        // Get the Rigidbody2D component from the spawned bubble
         Rigidbody2D rb = circle.GetComponent<Rigidbody2D>();
         if (rb != null)
         {

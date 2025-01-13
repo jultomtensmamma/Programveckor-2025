@@ -6,6 +6,9 @@ public class EnemyHealthScript : MonoBehaviour
 {
     public HealthScript Phealth;
     public float damage;
+    public float health = 100f;
+    public float maxHealth = 100f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +18,11 @@ public class EnemyHealthScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        if (health <= 0)
+        {
+            Die();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -24,5 +31,10 @@ public class EnemyHealthScript : MonoBehaviour
         {
             other.gameObject.GetComponent<HealthScript>().health -= damage;
         }
+    }
+    void Die()
+    {
+        Debug.Log(gameObject.name + " has died!");
+        Destroy(gameObject); 
     }
 }

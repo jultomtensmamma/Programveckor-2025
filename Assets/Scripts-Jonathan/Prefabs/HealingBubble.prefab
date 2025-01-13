@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5617935276078179917}
   - component: {fileID: 2302764239794373069}
   - component: {fileID: -4334579409019754808}
+  - component: {fileID: -8891384299532815556}
   m_Layer: 7
   m_Name: HealingBubble
   m_TagString: Untagged
@@ -112,7 +113,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &-4334579409019754808
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -148,3 +149,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &-8891384299532815556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5178972145786973632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c7f6b92596f0ce4a838121219b09bd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healingAmount: 15
