@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7b97851787514346a029dc05be67e7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1224863739}
   offset: {x: 0, y: 3.5, z: -5}
   smoothSpeed: 0.04
 --- !u!1 &1224863732
