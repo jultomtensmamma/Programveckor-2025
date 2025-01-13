@@ -42,5 +42,9 @@ public class Player2walkerscript : MonoBehaviour
         {
             isGrounded = true;
         }
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            isGrounded = true;
+        }
     }
 }
