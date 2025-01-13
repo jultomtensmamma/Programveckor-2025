@@ -4,34 +4,26 @@ using UnityEngine;
 
 public class ShootEnemy : MonoBehaviour
 {
-    public GameObject trianglePrefab;
-    public Transform firepoint;
-    public float projectileSpeed = 12f;
-    public float projectileLifetime = 6f;
+    public GameObject trianglePrefab; // Prefab för triangeln
+    public Transform firePoint;       // Position där triangeln skjuts ifrån
+
     void Update()
     {
+        // Kolla om spelaren trycker på E knappen
         if (Input.GetKeyDown(KeyCode.E))
         {
-            ShootTriangle();
+            SpawnTriangle();
         }
     }
-    void ShootTriangle()
+
+    void SpawnTriangle()
     {
-        GameObject triangle = Instantiate(trianglePrefab, firepoint.position, firepoint.rotation);
-        triangle.transform.rotation = Quaternion.Euler(0, 90, 0);
-        Rigidbody rb = triangle.GetComponent<Rigidbody>();
-        if (rb != null)
-        {
-            rb.velocity = triangle.transform.right * projectileSpeed;
-        }
-
-
-        Destroy(triangle, projectileLifetime);
-        {
-
-
-        }
-
+        // Skapa triangeln vid firePoint
+        Instantiate(trianglePrefab, firePoint.position, Quaternion.identity);
     }
 
 }
+
+
+
+  
