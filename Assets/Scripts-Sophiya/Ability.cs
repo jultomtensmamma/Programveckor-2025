@@ -20,7 +20,7 @@ public class Ability : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E)) //ifall E tangenten trycks ned
+        if (Input.GetKeyDown(KeyCode.LeftShift)) //ifall E tangenten trycks ned
         {
             isFloating = !isFloating; //Växla mellan sväva och inte sväva
 
