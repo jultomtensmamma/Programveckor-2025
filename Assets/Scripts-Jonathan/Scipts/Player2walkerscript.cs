@@ -2,31 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class playerMovement : MonoBehaviour
+public class Player2walkerscript : MonoBehaviour
 {
-
     public float moveSpeed = 5f;
     public float jumpForce = 7f;
     private bool isGrounded = true;
 
-    private Rigidbody2D rb;
+    private Rigidbody2D rb2;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb2 = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
         float horizontalInput = 0f;
 
-        if (Input.GetKey(KeyCode.A)) horizontalInput = -1f;
-        if (Input.GetKey(KeyCode.D)) horizontalInput = 1f;
+        if (Input.GetKey(KeyCode.LeftArrow)) horizontalInput = -1f;
+        if (Input.GetKey(KeyCode.RightArrow)) horizontalInput = 1f;
 
-        rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
-
-        if (Input.GetKeyDown(KeyCode.W) && isGrounded)
+        rb2.velocity = new Vector2(horizontalInput * moveSpeed, rb2.velocity.y);
+        
+        if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
         {
             Jump();
         }
@@ -34,7 +32,7 @@ public class playerMovement : MonoBehaviour
 
     void Jump()
     {
-        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        rb2.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         isGrounded = false;
     }
 
