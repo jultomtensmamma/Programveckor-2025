@@ -9,12 +9,13 @@ public class playerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce = 7f;
     private bool isGrounded = true;
-
+    SpriteRenderer sr;
     private Rigidbody2D rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -23,6 +24,14 @@ public class playerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A)) horizontalInput = -1f;
         if (Input.GetKey(KeyCode.D)) horizontalInput = 1f;
+        if (horizontalInput > 0f)
+        {
+            sr.flipX = false;
+        }
+        if (horizontalInput < 0f)
+        {
+            sr.flipX = true;
+        }
 
         rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
 

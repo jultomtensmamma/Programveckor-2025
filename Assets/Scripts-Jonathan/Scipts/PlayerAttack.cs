@@ -6,8 +6,16 @@ public class PlayerAttack : MonoBehaviour
 {
     public float attackRange = 2f; // Max avstånd för attacken
     public int Damage = 10; // Skada som spelaren gör
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+
+    }
 
     void Update()
+
     {
         // Om vänster musknapp trycks ned
         if (Input.GetMouseButtonDown(0))
@@ -20,6 +28,7 @@ public class PlayerAttack : MonoBehaviour
     {
         // Hitta alla colliders inom attackens räckvidd
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, attackRange);
+        animator.Play("Nova attack");
 
         foreach (Collider2D hit in hits)
         {
