@@ -8,7 +8,7 @@ public class HealingbubbleSOL : MonoBehaviour
     public float forwardForce = 5f; 
     public float upwardForce = 2f; 
     public float lifespan = 15f;   
-    public float cooldown;
+    public float cooldown = 5f;
     public float spawnDistance = 1.5f;
     float lastbubble;
 

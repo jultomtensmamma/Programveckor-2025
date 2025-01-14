@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class EnemyHealthScript : MonoBehaviour
 {
-    public HealthScript Phealth;
+    
     public float damage;
-    public float health = 100f;
-    public float maxHealth = 100f;
+    public float enemyhealth = 100f;
+    public float enemymaxHealth = 100f;
     
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class EnemyHealthScript : MonoBehaviour
     void Update()
     {
 
-        if (health <= 0)
+        if (enemyhealth <= 0)
         {
             Die();
         }
@@ -29,8 +29,9 @@ public class EnemyHealthScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<HealthScript>().health -= damage;
+            other.gameObject.GetComponent<EnemyHealthScript>().enemyhealth -= damage;
         }
+        
     }
     void Die()
     {

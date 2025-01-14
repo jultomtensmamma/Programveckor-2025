@@ -30,7 +30,7 @@ public class PlayerAttack : MonoBehaviour
                 EnemyHealthScript enemyHealth = hit.GetComponent<EnemyHealthScript>();
                 if (enemyHealth != null)
                 {
-                    enemyHealth.health -= Damage;
+                    enemyHealth.enemyhealth -= Damage;
                     Debug.Log("Enemy hit! Damage dealt: " + Damage);
                 }
             }
