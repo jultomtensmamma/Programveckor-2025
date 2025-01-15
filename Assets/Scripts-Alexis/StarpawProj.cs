@@ -16,7 +16,7 @@ public class StarpawProj : MonoBehaviour
     // Update is called once per frame
     private void OnCollisionEnter(Collision collision)
     {
-        EnemyHealthScript enemyHealth = collision.gameObject.GetComponent<EnemyHealthScript>();
+        EnemyHealthScriptLevel4 enemyHealth = collision.gameObject.GetComponent<EnemyHealthScriptLevel4>();
         {
             enemyHealth.TakeDamage(damage);
 
