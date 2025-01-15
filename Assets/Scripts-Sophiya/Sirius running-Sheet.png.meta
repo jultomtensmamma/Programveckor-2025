@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6959f14a71b797646acf1767c8457076
+guid: c172e5804912ad44692259aaf694f819
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,33 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -132,17 +106,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cosmickitties_jellyfish_0
+      name: Sirius running-Sheet_0
       rect:
         serializedVersion: 2
-        x: 21
+        x: 3
         y: 10
-        width: 12
-        height: 33
+        width: 52
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,8 +137,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5659ef47b14d8d14ab0e0aad2e184d84
-      internalID: -48818486
+      spriteID: 768f983e9545b0c47a473fddf169b497
+      internalID: -1196841562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sirius running-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 8
+        width: 59
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453ee03be90c0de419598355c691bde6
+      internalID: 1169140811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sirius running-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 9
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 598b47553b13a0847805286a8c410af9
+      internalID: -1014364463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sirius running-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 9
+        width: 57
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1108a26bf919de84391f54cecca919f4
+      internalID: -1069143559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sirius running-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 9
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543993b4396e9e448a4b0c97e0730157
+      internalID: -1678847532
       vertices: []
       indices: 
       edges: []
@@ -167,7 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cosmickitties_jellyfish_0: -48818486
+      Sirius running-Sheet_0: -1196841562
+      Sirius running-Sheet_1: 1169140811
+      Sirius running-Sheet_2: -1014364463
+      Sirius running-Sheet_3: -1069143559
+      Sirius running-Sheet_4: -1678847532
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
