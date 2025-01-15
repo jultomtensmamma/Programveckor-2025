@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class EnemyHealthScript : MonoBehaviour
 {
-    
+
     public float damage;
     public float enemyhealth = 100f;
     public float enemymaxHealth = 100f;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -24,28 +24,27 @@ public class EnemyHealthScript : MonoBehaviour
             Die();
         }
     }
-    void Damage(Collision other)
-    {
-        DamagingFunction Damage = other.gameObject.GetComponent<DamagingFunction>();
-        if (other.gameObject.CompareTag("Player"))
-        {
-            other.gameObject.GetComponent<EnemyHealthScript>().enemyhealth -= damage;
-        }
-        if (other.gameObject.CompareTag("DamageBubble"))
-        {
-            enemyhealth -= damage;
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        
-       
-
-    }
-    void Die()
+    private void Die()
     {
         Debug.Log(gameObject.name + " has died!");
-        Destroy(gameObject); 
+        Destroy(gameObject);
     }
-}
+    void Damage(Collision other)
+    {
+
+        
+            if (CompareTag("Enemy"))
+            {
+                if (other.gameObject.CompareTag("Player"))
+                {
+                    other.gameObject.GetComponent<EnemyHealthScript>().enemyhealth -= damage;
+                }
+                if (other.gameObject.CompareTag("DamageBubble"))
+                {
+                    enemyhealth -= damage;
+                }
+            }
+            
+        }
+    }
+
