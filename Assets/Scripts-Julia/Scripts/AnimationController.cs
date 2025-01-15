@@ -19,7 +19,7 @@ public class AnimationController : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
 
         // Om spelaren rör sig, sätt isRunning till true, annars false
-        if (Mathf.Abs(horizontalInput) > 0.20f)
+        if (Mathf.Abs(horizontalInput) > 0.7f)
         {
             isRunning = true;
         }
