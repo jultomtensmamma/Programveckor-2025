@@ -21,23 +21,26 @@ public class PrismaticBlast : MonoBehaviour
         // Spela visuell effekt om sådan finns
         if (blastEffectPrefab != null)
         {
-            Instantiate(blastEffectPrefab, transform.position, Quaternion.identity);
+            Instantiate(blastEffectPrefab, transform.position, Quaternion.LookRotation(Vector3.forward, transform.right));
         }
 
-        // Rita en kon i scenen för att visa var effekten sker (endast visuellt)
         Debug.Log("Prismatic Blast Activated!");
     }
 
     private void OnDrawGizmosSelected()
     {
-        // Visa räckvidd och vinkel för konen i scenen
+        // Räkna ut spelarens riktning
+        Vector3 forwardDirection = transform.right;
+
+        // Rita konens gränser i spelarens riktning
+        Vector3 leftBoundary = Quaternion.Euler(0, 0, -blastAngle / 2) * forwardDirection * blastRange;
+        Vector3 rightBoundary = Quaternion.Euler(0, 0, blastAngle / 2) * forwardDirection * blastRange;
+
+        // Rita räckviddscirkel
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, blastRange);
 
         // Rita konens gränser
-        Vector3 leftBoundary = Quaternion.Euler(0, 0, -blastAngle / 2) * transform.right * blastRange;
-        Vector3 rightBoundary = Quaternion.Euler(0, 0, blastAngle / 2) * transform.right * blastRange;
-
         Gizmos.color = Color.yellow;
         Gizmos.DrawLine(transform.position, transform.position + leftBoundary);
         Gizmos.DrawLine(transform.position, transform.position + rightBoundary);
