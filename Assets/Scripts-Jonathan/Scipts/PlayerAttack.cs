@@ -26,16 +26,16 @@ public class PlayerAttack : MonoBehaviour
 
     void PerformAttack()
     {
-        // Hitta alla colliders inom attackens räckvidd
+        
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, attackRange);
         animator.Play("Nova attack");
 
         foreach (Collider2D hit in hits)
         {
-            // Kolla om objektet är en fiende
+            
             if (hit.CompareTag("Enemy"))
             {
-                // Hämta fiendens hälsoskript och gör skada
+                
                 EnemyHealthScript enemyHealth = hit.GetComponent<EnemyHealthScript>();
                 if (enemyHealth != null)
                 {
@@ -48,7 +48,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        // Ritar en cirkel i scenen för att visa attackens räckvidd
+        
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
     }

@@ -7,12 +7,13 @@ public class Player2walkerscript : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce = 7f;
     private bool isGrounded = true;
-
+    SpriteRenderer sr2;
     private Rigidbody2D rb2;
 
     void Start()
     {
         rb2 = GetComponent<Rigidbody2D>();
+        sr2 = GetComponent<SpriteRenderer>();
     }
 
     void Update()

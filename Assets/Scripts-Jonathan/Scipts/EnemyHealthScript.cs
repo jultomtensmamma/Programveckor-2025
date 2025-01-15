@@ -24,14 +24,24 @@ public class EnemyHealthScript : MonoBehaviour
             Die();
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D other)
+    void Damage(Collision other)
     {
+        DamagingFunction Damage = other.gameObject.GetComponent<DamagingFunction>();
         if (other.gameObject.CompareTag("Player"))
         {
             other.gameObject.GetComponent<EnemyHealthScript>().enemyhealth -= damage;
         }
+        if (other.gameObject.CompareTag("DamageBubble"))
+        {
+            enemyhealth -= damage;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
         
+       
+
     }
     void Die()
     {
