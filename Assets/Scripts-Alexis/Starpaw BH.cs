@@ -52,7 +52,7 @@ public class BlackHole : MonoBehaviour
                 Vector2 pullDirection = (transform.position - collider.transform.position).normalized;
                 rb.AddForce(pullDirection * pullForce * Time.fixedDeltaTime);
 
-                EnemyHealthScript enemyHealth = collider.GetComponent<EnemyHealthScript>();
+                EnemyHealthScriptLevel4 enemyHealth = collider.GetComponent<EnemyHealthScriptLevel4>();
                 if (enemyHealth != null)
                 {
                     enemyHealth.TakeDamage(damage);

@@ -7,7 +7,7 @@ public class EnergyBurstAbility : MonoBehaviour
     //Alexis
 {
     public float maxEnergy = 100f;
-    public float energyBurstDamage = 50f;
+    public int energyBurstDamage = 50;
     public float pushForce = 10f;
     public float radius = 10f;
 
@@ -43,7 +43,7 @@ public class EnergyBurstAbility : MonoBehaviour
                 enemyRb.AddForce(pushDirection * pushForce, ForceMode2D.Impulse);
             }
 
-            EnemyHealthScript enemyhealth = enemy.GetComponent<EnemyHealthScript>();
+            EnemyHealthScriptLevel4 enemyhealth = enemy.GetComponent<EnemyHealthScriptLevel4>();
             if (enemyhealth != null)
             {
                 enemyhealth.TakeDamage(energyBurstDamage);
