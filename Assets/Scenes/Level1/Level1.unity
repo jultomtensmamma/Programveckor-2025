@@ -404,7 +404,7 @@ GameObject:
   - component: {fileID: 1224863744}
   - component: {fileID: 1224863743}
   m_Layer: 0
-  m_Name: Nova running-Sheet_0
+  m_Name: Nova
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
