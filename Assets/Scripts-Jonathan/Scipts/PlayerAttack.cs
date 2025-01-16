@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    public float attackRange = 2f; // Max avstånd för attacken
-    public int Damage = 10; // Skada som spelaren gör
+    public float attackRange = 2f; 
+    public int Damage = 10; 
     private Animator animator;
 
     private void Start()
@@ -17,7 +17,7 @@ public class PlayerAttack : MonoBehaviour
     void Update()
 
     {
-        // Om vänster musknapp trycks ned
+        
         if (Input.GetMouseButtonDown(0))
         {
             PerformAttack();
@@ -28,7 +28,7 @@ public class PlayerAttack : MonoBehaviour
     {
         
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, attackRange);
-        animator.Play("Nova attack");
+        animator.Play("Cat attack");
 
         foreach (Collider2D hit in hits)
         {

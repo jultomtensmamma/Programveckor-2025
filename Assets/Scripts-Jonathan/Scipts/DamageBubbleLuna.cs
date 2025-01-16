@@ -31,11 +31,12 @@ public class DamageBubbleLuna : MonoBehaviour
             }
 
 
-            if (Input.GetKeyDown(KeyCode.P))
-            {
-                SpawnCircle();
-            }
+        if (Input.GetKeyDown(KeyCode.P) && Time.time >= lastSpawnTime + cooldown)
+        {
+            SpawnCircle();
+            lastSpawnTime = Time.time;
         }
+    }
 
         void SpawnCircle()
         {
