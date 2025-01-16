@@ -136,7 +136,7 @@ LineRenderer:
   m_MaskInteraction: 0
   m_UseWorldSpace: 1
   m_Loop: 0
-  m_ApplyActiveColorSpace: 1
+  m_ApplyActiveColorSpace: 0
 --- !u!114 &3949265995726215142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,3 +152,4 @@ MonoBehaviour:
   player1: {fileID: 0}
   player2: {fileID: 0}
   maxDistance: 5
+  pullForce: 10

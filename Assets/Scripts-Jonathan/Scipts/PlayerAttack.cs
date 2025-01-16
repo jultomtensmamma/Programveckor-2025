@@ -28,7 +28,7 @@ public class PlayerAttack : MonoBehaviour
     {
         
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, attackRange);
-        animator.Play("Cat attack");
+        animator.Play("Luna attack");
 
         foreach (Collider2D hit in hits)
         {

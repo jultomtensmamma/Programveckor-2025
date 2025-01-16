@@ -22,6 +22,14 @@ public class Player2walkerscript : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftArrow)) horizontalInput = -1f;
         if (Input.GetKey(KeyCode.RightArrow)) horizontalInput = 1f;
+        if(horizontalInput > 0f)
+        {
+            sr2.flipX = false;
+        }
+        if(horizontalInput < 0f)
+        {
+            sr2.flipX = true;
+        }
 
         rb2.velocity = new Vector2(horizontalInput * moveSpeed, rb2.velocity.y);
         
