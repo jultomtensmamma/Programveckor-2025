@@ -11,6 +11,7 @@ public class HealingbubbleSOL : MonoBehaviour
     public float cooldown = 5f;
     public float spawnDistance = 1.5f;
     float lastbubble;
+    private float lastSpawnTime = -Mathf.Infinity;
 
     private Vector2 lastMovementDirection = Vector2.right; 
 
@@ -25,10 +26,11 @@ public class HealingbubbleSOL : MonoBehaviour
             lastMovementDirection = new Vector2(horizontalInput, 0).normalized;
         }
 
-        
-        if (Input.GetKeyDown(KeyCode.E))
+
+        if (Input.GetKeyDown(KeyCode.E) && Time.time >= lastSpawnTime + cooldown)
         {
             SpawnCircle();
+            lastSpawnTime = Time.time; 
         }
     }
 

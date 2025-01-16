@@ -11,10 +11,15 @@ public class DamageBubbleLuna : MonoBehaviour
         public float cooldown = 5f;
         public float spawnDistance = 1.5f;
         float lastbubble;
+    private float lastSpawnTime = -Mathf.Infinity;
 
-        private Vector2 lastMovementDirection = Vector2.right;
+    private Vector2 lastMovementDirection = Vector2.right;
 
-        void Update()
+    private void Start()
+    {
+       
+    }
+    void Update()
         {
 
             float horizontalInput = Input.GetAxisRaw("Horizontal");

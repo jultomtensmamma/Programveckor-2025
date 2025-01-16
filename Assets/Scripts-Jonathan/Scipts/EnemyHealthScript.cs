@@ -29,10 +29,9 @@ public class EnemyHealthScript : MonoBehaviour
         Debug.Log(gameObject.name + " has died!");
         Destroy(gameObject);
     }
+
     void Damage(Collision other)
     {
-
-        
             if (CompareTag("Enemy"))
             {
                 if (other.gameObject.CompareTag("Player"))
