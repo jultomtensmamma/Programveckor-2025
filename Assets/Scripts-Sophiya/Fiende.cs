@@ -4,36 +4,17 @@ using UnityEngine;
 
 public class Fiende : MonoBehaviour
 {
-    public int maxHealth = 100; // Fiendens maximala hälsa
-    private int currentHealth; // Fiendens nuvarande hälsa
+    public int damage = 1; // Ger 1 skada
 
-    void Start()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Sätt nuvarande hälsa till maxhälsa vid start
-        currentHealth = maxHealth;
-    }
-
-    public void TakeDamage(int damage)
-    {
-        // Minska fiendens hälsa med skadevärdet
-        currentHealth -= damage;
-
-        // Visa fiendens återstående hälsa (valfritt)
-        Debug.Log($"Fienden tog {damage} skada. Hälsa kvar: {currentHealth}");
-
-        // Kontrollera om fienden är död
-        if (currentHealth <= 0)
+        CatHealth catHealth = collision.gameObject.GetComponent<CatHealth>();
+        if (catHealth != null)
         {
-            Die();
+            catHealth.TakeDamage(damage);
+            Debug.Log("Katten nuddade maneten");
         }
     }
-
-    void Die()
-    {
-        // Kör eventuella dödslogik här, t.ex. spela en animation
-        Debug.Log("Fienden är död!");
-
-        // Förstöra fienden
-        Destroy(gameObject);
-    }
 }
+
+   
