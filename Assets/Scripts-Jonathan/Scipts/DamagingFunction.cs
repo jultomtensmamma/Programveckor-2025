@@ -11,7 +11,7 @@ public class DamagingFunction : MonoBehaviour
 
     void Start()
     {
-
+        
     }
 
     void Update()
