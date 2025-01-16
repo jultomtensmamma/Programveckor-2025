@@ -4,45 +4,43 @@ using UnityEngine;
 
 public class PrismaticBlast : MonoBehaviour
 {
-    public float blastRange = 5f;         // Räckvidd för konen
-    public float blastAngle = 60f;       // Vinkeln på konen
-    public GameObject blastEffectPrefab; // Visuell effekt för konen
+    public GameObject blastPrefab;       // Prefab för PrismaticBlast
+    public float blastSpeed = 10f;       // Hastigheten på konen
+    public float blastLifetime = 2f;     // Livslängden för konen
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift)) // När LShift trycks
+        if (Input.GetKeyDown(KeyCode.LeftShift)) // Aktivera konen med LeftShift
         {
-            ActivateBlast();
+            FireBlast();
         }
     }
 
-    private void ActivateBlast()
+    private void FireBlast()
     {
-        // Spela visuell effekt om sådan finns
-        if (blastEffectPrefab != null)
+        if (blastPrefab != null)
         {
-            Instantiate(blastEffectPrefab, transform.position, Quaternion.LookRotation(Vector3.forward, transform.right));
+            // Skapa konen vid spelarens position
+            GameObject blast = Instantiate(blastPrefab, transform.position, Quaternion.identity);
+
+            // Räkna ut riktning baserat på spelarens skala (höger eller vänster)
+            Vector2 direction = transform.localScale.x > 0 ? Vector2.right : Vector2.left;
+
+            // Lägg till rörelse till konen
+            Rigidbody2D rb = blast.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.velocity = direction * blastSpeed; // Sätt hastighet baserat på riktning
+            }
+
+            // Rätta till rotationen på konen
+            float rotationZ = direction.x > 0 ? 0 : 180;
+            blast.transform.rotation = Quaternion.Euler(0, rotationZ, 0);
+
+            // Förstör konen efter en viss tid
+            Destroy(blast, blastLifetime);
+
+            Debug.Log("Prismatic Blast fired!");
         }
-
-        Debug.Log("Prismatic Blast Activated!");
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        // Räkna ut spelarens riktning
-        Vector3 forwardDirection = transform.right;
-
-        // Rita konens gränser i spelarens riktning
-        Vector3 leftBoundary = Quaternion.Euler(0, 0, -blastAngle / 2) * forwardDirection * blastRange;
-        Vector3 rightBoundary = Quaternion.Euler(0, 0, blastAngle / 2) * forwardDirection * blastRange;
-
-        // Rita räckviddscirkel
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(transform.position, blastRange);
-
-        // Rita konens gränser
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(transform.position, transform.position + leftBoundary);
-        Gizmos.DrawLine(transform.position, transform.position + rightBoundary);
     }
 }
