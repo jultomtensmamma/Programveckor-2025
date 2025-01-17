@@ -12,6 +12,7 @@ public class TeleportPlayer : MonoBehaviour
 
     void Update()
     {
+        //canTeleport = true;
         // Kontrollera om alla komponenter har samlats in
         if (inventory != null && inventory.hasComponent1 && inventory.hasComponent2 && inventory.hasComponent3)
         {
@@ -31,9 +32,9 @@ public class TeleportPlayer : MonoBehaviour
 
     private void Teleport()
     {
-        if (!string.IsNullOrEmpty(nextSceneName))
+        if (!string.IsNullOrEmpty("Level2"))
         {
-            SceneManager.LoadScene(nextSceneName);
+            SceneManager.LoadScene("Level2");
         }
     }
 }
