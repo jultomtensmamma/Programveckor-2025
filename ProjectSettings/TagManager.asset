@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - Bubble
   - DamageBubble
+  - Component1
+  - Component2
+  - Component3
   layers:
   - Default
   - TransparentFX
