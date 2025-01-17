@@ -4,40 +4,65 @@ using UnityEngine;
 
 public class CatHealth : MonoBehaviour
 {
-    public int maxHealth = 5; //Max hälsa för Sirius
+    public int maxHealth = 5; // Maximal hälsa
     private int currentHealth;
-    public bool hasMagicShield = false; // Ifall katten har skölden
+    public GameObject bubbla; // Referens till bubbelsköldens spelobjekt
+    private bool hasShield = false; // Om skölden är aktiv
 
     void Start()
     {
-        currentHealth = maxHealth; //starta med den max liv  
+        currentHealth = maxHealth; // Starta med maximal hälsa
+        bubbla.SetActive(false); // Skölden ska vara inaktiv vid start
+    }
+
+    void Update()
+    {
+        // Aktivera skölden när spelaren trycker på "E"
+        if (Input.GetKeyDown(KeyCode.E) && !hasShield)
+        {
+            ActivateShield();
+        }
     }
 
     public void TakeDamage(int damage)
     {
-        if (hasMagicShield)
+        if (hasShield)
         {
-            hasMagicShield = false;
+            // Skölden är aktiv, blockera skadan och ta bort skölden
+            DeactivateShield();
             Debug.Log("Skölden tog skadan");
-
+            return;
         }
-        else
+
+        // Om skölden inte är aktiv tar den skada
+        currentHealth -= damage;
+        Debug.Log("Katten tog skada! Nuvarande hälsa: " + currentHealth);
+
+        if (currentHealth <= 0)
         {
-
-            currentHealth -= damage;
-            Debug.Log("Katten tog skada! Liv kvar:" + currentHealth);
-
-            if (currentHealth <= 0)
-            {
-                Die();
-            }
+            Die();
         }
     }
+
+    private void ActivateShield()
+    {
+        hasShield = true;
+        bubbla.SetActive(true); // Aktivera bubbelskölden
+        Debug.Log("Skölden aktiverad!");
+    }
+
+    private void DeactivateShield()
+    {
+        hasShield = false;
+        bubbla.SetActive(false); // Deaktivera bubbelskölden
+        Debug.Log("Skölden inaktiverad!");
+    }
+
     private void Die()
     {
-        Debug.Log("Katten är död");
+        Debug.Log("Katten dog!");
+        // Lägg till logik för att avsluta spelet eller återställa scenen
     }
 }
 
-    
 
