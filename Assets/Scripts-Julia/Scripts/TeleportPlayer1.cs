@@ -32,9 +32,9 @@ public class TeleportPlayer : MonoBehaviour
 
     private void Teleport()
     {
-        if (!string.IsNullOrEmpty("Level2"))
+        if (!string.IsNullOrEmpty("Level3"))
         {
-            SceneManager.LoadScene("Level2");
+            SceneManager.LoadScene("Level3");
         }
     }
 }

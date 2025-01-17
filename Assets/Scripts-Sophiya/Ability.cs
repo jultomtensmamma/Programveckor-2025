@@ -8,8 +8,7 @@ public class Ability : MonoBehaviour
     public float floatForce = 6f; // hur mkt kraft för att sväva
     public float moveSpeed = 5f; //rörelsehastighet
     private Rigidbody2D rb3; //Fysik komponent
-    private bool isFloating = false;// kontrollerar ifall katten svävar
-
+    public bool isFloating;
     void Start()
     {
         rb3 = GetComponent<Rigidbody2D>();
@@ -22,22 +21,30 @@ public class Ability : MonoBehaviour
 
     void Update()
     {
+     
         if (Input.GetKeyDown(KeyCode.LeftShift)) //ifall E tangenten trycks ned
         {
             isFloating = !isFloating; //Växla mellan sväva och inte sväva
             rb3.gravityScale = isFloating ? 0 : 1; //Växla gravitationen
         }
+        
 
-         
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            isFloating = true;
+        }
+
+        
+
         float moveInput = Input.GetAxis("Horizontal"); //Hanterar horisontell rörelse
         rb3.velocity = new Vector2(moveInput* moveSpeed, rb3.velocity.y);
-
+        
         if (isFloating) //Uppåtriktad kraft
         {
             rb3.AddForce(Vector2.up * floatForce, ForceMode2D.Force);
             //rb.velocity = new Vector2(rb.velocity.x, floatForce);
             //Debug.Log(rb3.velocity.y);
         }
-
+        
     }
 }

@@ -12,6 +12,8 @@ public class playerMovement : MonoBehaviour
     SpriteRenderer sr;
     private Rigidbody2D rb;
 
+    Ability ability;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,7 +34,7 @@ public class playerMovement : MonoBehaviour
         {
             sr.flipX = true;
         }
-
+        
         rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
 
         if (Input.GetKey(KeyCode.W) && isGrounded)
@@ -44,7 +46,6 @@ public class playerMovement : MonoBehaviour
     void Jump()
     {
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        isGrounded = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

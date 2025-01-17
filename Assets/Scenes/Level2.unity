@@ -802,7 +802,6 @@ GameObject:
   - component: {fileID: 807016082}
   - component: {fileID: 807016079}
   - component: {fileID: 807016078}
-  - component: {fileID: 807016089}
   - component: {fileID: 807016090}
   - component: {fileID: 807016091}
   m_Layer: 0
@@ -839,6 +838,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floatForce: 6
   moveSpeed: 5
+  isFloating: 0
 --- !u!114 &807016082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1027,20 +1027,6 @@ Transform:
   - {fileID: 1795665930}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &807016089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 807016077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a48cfe93b81b0cc44a006a58e8f295dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpForce: 5
 --- !u!114 &807016090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1962,6 +1948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1350904494}
   - component: {fileID: 1350904493}
+  - component: {fileID: 1350904495}
   m_Layer: 0
   m_Name: TeleportPoint
   m_TagString: Untagged
@@ -2029,6 +2016,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1350904495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350904492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bcaa12905bce8c419f66eb84f4386e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneName: Level3
 --- !u!1 &1444491621
 GameObject:
   m_ObjectHideFlags: 0
