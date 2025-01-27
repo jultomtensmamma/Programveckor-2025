@@ -1,0 +1,998 @@
+fileFormatVersion: 2
+guid: eb9847140131cab46a6036a5fb3e208d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 116
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360608b86f7fd0b4e9e80a5f708e6b49
+      internalID: 1836843968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 9
+        width: 155
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477584c67219430438d83bebc552107c
+      internalID: 1325205704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 13
+        width: 155
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8604fa547ddc24e89ac1a07336f0c5
+      internalID: -1935131784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 9
+        width: 138
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010cf2e0287e488468051004e457c6b4
+      internalID: -1199279630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 31
+        width: 136
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e85cd9165e03640b87280663acb27c
+      internalID: 1437453304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 37
+        width: 137
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f48d4ddbb08e8445977573608799f2b
+      internalID: 317806443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2251
+        y: 37
+        width: 138
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047b93254ac2b734da9299994853165e
+      internalID: -1107052575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 24
+        width: 138
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d27c3331f8b6a54ea202ec4bf608e3e
+      internalID: -960862062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2892
+        y: 18
+        width: 138
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b75488cbf72eb4197e0c977887597a
+      internalID: -407005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 3209
+        y: 7
+        width: 155
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c3940b4bb800a4a9c76ea6ea941124
+      internalID: -1215679562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 3528
+        y: 9
+        width: 145
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100543ac44f30b944a4a906c3020bacc
+      internalID: -524833442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3848
+        y: 116
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0763a3b821396744e8f036bf203b21c0
+      internalID: 172994598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 2
+        width: 145
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d96b8d40b090fe4caa992cfd8705382
+      internalID: -1825509990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 112
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88eb8ff1ff077ff4496b4b465a47d0db
+      internalID: -548172266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 3848
+        y: 2
+        width: 155
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d7f129c95e56343b3b70fc4423e4b4
+      internalID: 60694108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 112
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36ea4d1080f0ee479346fb6a0fbcd99
+      internalID: 346134323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 144
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914bc226c24b63847a02243980149064
+      internalID: 1531632450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 70
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318e1b40722fd2a4a8ff8fc44df29114
+      internalID: 828754182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 70
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d859b562b88b5af4fb42c333f356f985
+      internalID: 1671393278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 66
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03310f748e2441c4abaec4b6c2e84203
+      internalID: -153283274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 70
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ed463a3d643bf4e82cc8836b383e58
+      internalID: 2089611364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 66
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0644b6c18242b4ba9235cf8d7af013
+      internalID: 1386440119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 2067
+        y: 66
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5612729ea6261714798d2d2464d75168
+      internalID: 641955902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 66
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1b3cf1727a2fc44881577f07b63ff6
+      internalID: -1153111515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 2395
+        y: 70
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc656c63fb57a64f93b2d68db5a1fd0
+      internalID: 1403834364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 2708
+        y: 66
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16131849d2c17e24e8fdc2d16661f701
+      internalID: -697011696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 2715
+        y: 70
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49bdc73d972e3e541888d99bfb0698ec
+      internalID: -859237305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 3028
+        y: 66
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7d6ffa493ece64e8dedca17c3ca151
+      internalID: 2133482991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 3675
+        y: 70
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216616d912fe66443935b0692ddef6f4
+      internalID: 1458184318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 4169
+        y: 0
+        width: 156
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fee9b5e731642a46bbfb82e23f6e7d5
+      internalID: 1504207852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 44
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba61f2b62060d4445b99eccbdbb77098
+      internalID: 1246647537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 42
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30eea807eb4e54d489150051d6dc97a4
+      internalID: 1078002772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 42
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf667000bba35247bcb2d399664864e
+      internalID: 534559029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 42
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4a212ac0a7f894991f64b1a29f1f5f
+      internalID: -1074627695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 42
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b98a510dae781642871bdd57b883348
+      internalID: 192268039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 42
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127897ed312e758448f262147eb4ef6d
+      internalID: 1245551069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 42
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e07bcc64d07e074aa48a11f671b87a9
+      internalID: -82449815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 4
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3500e0369261841b7c7ee8e8ba7a3f
+      internalID: 1993738785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: metalldel 1 progv-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 3222
+        y: 4
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f874747502c9614cae3f33051185d3b
+      internalID: 1879732332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      metalldel 1 progv-Sheet_0: 1836843968
+      metalldel 1 progv-Sheet_1: 1325205704
+      metalldel 1 progv-Sheet_10: -524833442
+      metalldel 1 progv-Sheet_11: 172994598
+      metalldel 1 progv-Sheet_12: -1825509990
+      metalldel 1 progv-Sheet_13: -548172266
+      metalldel 1 progv-Sheet_14: 60694108
+      metalldel 1 progv-Sheet_15: 346134323
+      metalldel 1 progv-Sheet_16: 1531632450
+      metalldel 1 progv-Sheet_17: 828754182
+      metalldel 1 progv-Sheet_18: 1671393278
+      metalldel 1 progv-Sheet_19: -153283274
+      metalldel 1 progv-Sheet_2: -1935131784
+      metalldel 1 progv-Sheet_20: 2089611364
+      metalldel 1 progv-Sheet_21: 1386440119
+      metalldel 1 progv-Sheet_22: 641955902
+      metalldel 1 progv-Sheet_23: -1153111515
+      metalldel 1 progv-Sheet_24: 1403834364
+      metalldel 1 progv-Sheet_25: -697011696
+      metalldel 1 progv-Sheet_26: -859237305
+      metalldel 1 progv-Sheet_27: 2133482991
+      metalldel 1 progv-Sheet_28: 1458184318
+      metalldel 1 progv-Sheet_29: 1504207852
+      metalldel 1 progv-Sheet_3: -1199279630
+      metalldel 1 progv-Sheet_30: 1246647537
+      metalldel 1 progv-Sheet_31: 1078002772
+      metalldel 1 progv-Sheet_32: 534559029
+      metalldel 1 progv-Sheet_33: -1074627695
+      metalldel 1 progv-Sheet_34: 192268039
+      metalldel 1 progv-Sheet_35: 1245551069
+      metalldel 1 progv-Sheet_36: -82449815
+      metalldel 1 progv-Sheet_37: 1993738785
+      metalldel 1 progv-Sheet_38: 1879732332
+      metalldel 1 progv-Sheet_4: 1437453304
+      metalldel 1 progv-Sheet_5: 317806443
+      metalldel 1 progv-Sheet_6: -1107052575
+      metalldel 1 progv-Sheet_7: -960862062
+      metalldel 1 progv-Sheet_8: -407005
+      metalldel 1 progv-Sheet_9: -1215679562
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
