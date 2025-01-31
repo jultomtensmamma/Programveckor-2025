@@ -44,8 +44,6 @@ public class CooldownButtons : MonoBehaviour
         isCooldown = true;
         cooldownTimer = cooldownTime;
 
-        
-        Debug.Log("Button action performed!");
     }
 
     void ResetButton()

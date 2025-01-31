@@ -42,8 +42,6 @@ public class CooldownButton2 : MonoBehaviour
         isCooldown = true;
         cooldownTimer = cooldownTime;
 
-
-        Debug.Log("Button action performed!");
     }
 
     void ResetButton()
@@ -51,6 +49,6 @@ public class CooldownButton2 : MonoBehaviour
 
         isCooldown = false;
         actionButton.interactable = true;
-        cooldownText.text = "Press E";
+        cooldownText.text = "Press P";
     }
 }
