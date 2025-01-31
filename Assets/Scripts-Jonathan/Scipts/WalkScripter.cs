@@ -46,6 +46,7 @@ public class playerMovement : MonoBehaviour
     void Jump()
     {
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        isGrounded = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
