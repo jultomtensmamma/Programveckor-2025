@@ -21,7 +21,7 @@ public class DeathScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             SceneManager.LoadScene(Respawn);
-            Debug.Log("Du har dött!");
+            
         }
     }
 }

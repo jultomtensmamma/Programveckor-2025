@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TripleShoot : MonoBehaviour
@@ -7,7 +9,9 @@ public class TripleShoot : MonoBehaviour
     public GameObject ballPrefab;    // Prefab för bollen
     public float ballSpeed = 10f;   // Hastighet på bollarna
     public float spreadAngle = 15f; // Vinkel för spridning av bollarna
-
+    public float lifespan = 5f;
+    float lastball;
+    public float cooldown = 5f;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E)) // När E-knappen trycks
@@ -39,5 +43,14 @@ public class TripleShoot : MonoBehaviour
         {
             rb.velocity = direction.normalized * ballSpeed;
         }
+        Destroy(ball, lifespan);
+        if (Time.time - lastball < cooldown)
+        {
+            return;
+        }
+        lastball = Time.time;
     }
 }
+    
+
+
